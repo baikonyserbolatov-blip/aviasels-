@@ -1,0 +1,109 @@
+/* Основные стили */
+.country-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f6f5f3;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Навигационное меню */
+nav {
+  background-color: #005b8f;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation li {
+  margin: 0 20px;
+}
+
+.navigation a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  color: #f4f9fc;
+  text-decoration: underline;
+}
+
+/* Секции */
+.tour-detail {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #005b8f;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Плавный скроллинг */
+html {
+  scroll-behavior: smooth;
+}
+
+.tour-detail h2 {
+  color: #fbfafa;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.tour-detail p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+}
+
+.tour-detail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.navbar-buttons {
+  display: flex;
+  justify-content: space-between; /* Равномерно распределяет кнопки */
+  align-items: center; /* Выравнивает кнопки по центру */
+  flex-wrap: wrap; /* Разрешает перенос кнопок, если не хватает места */
+  gap: 10px; /* Расстояние между кнопками */
+}
+button {
+  flex: 1; /* Все кнопки занимают равное пространство */
+  text-align: center; /* Выравнивание текста внутри кнопки */
+  color: #ffffff;
+  background-color: #003d99; /* Устанавливаем глубокий синий */
+  border: 2px solid #002d80; /* Добавляем контур */
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.3s ease; /* Только анимация увеличения */
+}
+
+button:hover {
+  transform: scale(1.1); /* Увеличение кнопки при наведении */
+  background-color: #003d99; /* Фон остаётся неизменным */
+  color: #e6f2ff; /* Легкое изменение цвета текста */
+}
+
+
+.section-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}

@@ -1,0 +1,231 @@
+/* Основной стиль */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #012761; /* Обновлённый градиент */
+  background-color: #1d7bcd; /* Голубой фон */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to right, #003d99, #002d80); /* Обновлённый градиент */
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(247, 242, 242, 0.981);
+}
+
+nav {
+  margin-top: 30px; /* Отступ сверху для навигации */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+/* Стили для кнопок стран */
+.country-link {
+  color: #ffffff;
+  background-color: #003d99; /* Глубокий синий */
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 2px solid #002d80;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.country-link:hover {
+  background-color: #004da6; /* Ярче при наведении */
+  transform: scale(1.1);
+  color: #e6f2ff;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 20px 0;
+  background-color: #090909; /* Светлый оттенок */
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(to right, #002d80, #003d99); /* Градиент как в header */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffcc33; /* Контрастный оттенок */
+}
+
+.footer {
+  background: linear-gradient(to right, #002d80, #003d99);
+  color: white;
+  text-align: center;
+  padding: 40px 20px; /* Увеличенные отступы */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.footer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 0 0 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-form {
+  max-width: 600px; /* Ограничиваем ширину формы */
+  margin: 0 auto; /* Центрируем форму */
+  background: white; /* Белый фон */
+  padding: 20px; /* Отступы внутри формы */
+  border-radius: 10px; /* Скругленные углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+  text-align: left; /* Текст выравнивается по левому краю */
+}
+
+.contact-form div {
+  margin-bottom: 15px; /* Отступы между полями */
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Поля занимают всю ширину */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Учитываем padding в ширине */
+}
+
+.contact-form textarea {
+  resize: vertical; /* Позволяем изменять только высоту */
+  min-height: 100px; /* Минимальная высота для textarea */
+}
+
+.contact-form button {
+  background-color: #003d99;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #004da6;
+  transform: scale(1.05);
+}
+
+
+
+/* Кнопка "Вернуться наверх" */
+.back-to-top {
+  position: fixed; /* Фиксируем кнопку на экране */
+  bottom: 30px; /* Немного выше низа */
+  right: 30px; /* Справа от края */
+  background-color: #003d99;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; /* Изначально скрыта */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top.visible {
+  display: block; /* Показываем кнопку, когда она становится видимой */
+  opacity: 1;
+}
+
+.back-to-top:hover {
+  background-color: #004da6;
+  transform: scale(1.1); /* Легкое увеличение при наведении */
+}
+
+/* Дополнительные стили */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
